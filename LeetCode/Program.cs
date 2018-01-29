@@ -10,6 +10,15 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
+            TestTools helper = new TestTools();
+
+            //第一题
+            Console.WriteLine(helper.TwoSum());
+
+            //第三题
+            Console.WriteLine(helper.LengthOfLongestSubstring());
+
+            Console.ReadKey();
         }
     }
 }
