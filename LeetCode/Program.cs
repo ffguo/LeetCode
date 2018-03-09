@@ -18,6 +18,9 @@ namespace LeetCode
             //第三题
             Console.WriteLine(helper.LengthOfLongestSubstring());
 
+            //第五题
+            Console.WriteLine(helper.LongestPalindrome());
+
             Console.ReadKey();
         }
     }

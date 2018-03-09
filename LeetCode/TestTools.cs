@@ -38,5 +38,22 @@ namespace LeetCode
                    helper.LengthOfLongestSubstring(strTest2) == 1 &&
                    helper.LengthOfLongestSubstring(strTest3) == 3;
         }
+
+        /// <summary>
+        /// 第三题
+        /// </summary>
+        /// <returns></returns>
+        public bool LongestPalindrome()
+        {
+            string strTest1 = "babad";
+            string strTest2 = "cbbd";
+            string strTest3 = "a";
+            string strTest4 = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
+
+            return helper.LongestPalindrome(strTest1) == "aba" &&
+                   helper.LongestPalindrome(strTest2) == "bb" &&
+                   helper.LongestPalindrome(strTest3) == "a" &&
+                   helper.LongestPalindrome(strTest4) == "ranynar";
+        }
     }
 }
