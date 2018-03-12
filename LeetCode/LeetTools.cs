@@ -92,5 +92,29 @@ namespace LeetCode
             }
             return R - L - 1;
         }
+
+        /// <summary>
+        /// 第六题
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="numRows"></param>
+        /// <returns></returns>
+        public string Convert(string s, int numRows)
+        {
+            int i = 0;
+            string[] arr = new string[numRows];
+            while (i < s.Length)
+            {
+                for (int j = 0; j < numRows && i < s.Length; j++)
+                {
+                    arr[j] += s[i++];
+                }
+                for (int j = numRows - 2; j >= 1 && i < s.Length; j--)
+                {
+                    arr[j] += s[i++];
+                }
+            }
+            return string.Join("", arr);
+        }
     }
 }

@@ -40,7 +40,7 @@ namespace LeetCode
         }
 
         /// <summary>
-        /// 第三题
+        /// 第五题
         /// </summary>
         /// <returns></returns>
         public bool LongestPalindrome()
@@ -54,6 +54,17 @@ namespace LeetCode
                    helper.LongestPalindrome(strTest2) == "bb" &&
                    helper.LongestPalindrome(strTest3) == "a" &&
                    helper.LongestPalindrome(strTest4) == "ranynar";
+        }
+
+        /// <summary>
+        /// 第六题
+        /// </summary>
+        /// <returns></returns>
+        public bool Convert()
+        {
+            string strTest1 = "PAYPALISHIRING";
+
+            return helper.Convert(strTest1, 3) == "PAHNAPLSIIGYIR";
         }
     }
 }
