@@ -28,6 +28,10 @@ namespace LeetCode
             Console.WriteLine("第六题");
             Console.WriteLine(helper.Convert());
 
+            //第七题
+            Console.WriteLine("第七题");
+            Console.WriteLine(helper.Reverse());
+
             Console.ReadKey();
         }
     }

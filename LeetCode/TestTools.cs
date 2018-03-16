@@ -66,5 +66,24 @@ namespace LeetCode
 
             return helper.Convert(strTest1, 3) == "PAHNAPLSIIGYIR";
         }
+
+        /// <summary>
+        /// 第七题
+        /// </summary>
+        /// <returns></returns>
+        public bool Reverse()
+        {
+            int test1 = 123;
+            int test2 = -123;
+            int test3 = 120;
+            int test4 = 2147483647;
+            int test5 = -2147483647;
+
+            return helper.Reverse(test1) == 321 &&
+                   helper.Reverse(test2) == -321 &&
+                   helper.Reverse(test3) == 21 &&
+                   helper.Reverse(test4) == 0 &&
+                   helper.Reverse(test5) == 0;
+        }
     }
 }

@@ -116,5 +116,44 @@ namespace LeetCode
             }
             return string.Join("", arr);
         }
+
+        /// <summary>
+        /// 第七题:解法一
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
+        public int Reverse(int x)
+        {
+            int result = 0;
+            string tmp = string.Join("", x.ToString().Reverse());
+            if (tmp[tmp.Length - 1] == '-')
+            {
+                return int.TryParse(tmp.Substring(0, tmp.Length - 1), out result) ? -result : 0;
+            }
+            else
+            {
+                return int.TryParse(tmp, out result) ? result : 0;
+            }
+        }
+
+        /// <summary>
+        /// 第七题:解法二
+        /// </summary>
+        /// <param name="x"></param>
+        /// <returns></returns>
+        public int Reverse1(int x)
+        {
+            int result = 0;
+            if (x == 0)
+                return 0;
+            while (x != 0)
+            {
+                if (result > (2147483647 / 10) || result < (-2147483648 / 10))
+                    return 0;
+                result = result * 10 + x % 10;
+                x /= 10;
+            }
+            return result;
+        }
     }
 }
